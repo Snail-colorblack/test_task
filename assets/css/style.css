@@ -8,6 +8,15 @@
     color: var(--color) !important;
     text-decoration: none !important;
 }
+html{
+    background: #F5F6F7;
+}
+body{
+    margin: 0 auto !important;
+    max-width: 1600px;
+    background: white;
+    box-shadow: 8px 8px 43px -7px #D1D1D1;
+}
 :root{
     /* fonts */
     --default-font: 1.5rem; /* 15px */ 
@@ -28,7 +37,7 @@ h1{font-size: var(--headder1-font); color: #191919; font-weight: 700;}
 h2{font-size: var(--headder2-font); color: #191919; font-weight: 700;}
 h3{font-size: var(--headder3-font); color: #191919; font-weight: 400;}
 h4{font-size: var(--headder4-font); color: #191919; font-weight: 400;}
-
+p{font-size: var(--default-font); color: #191919; font-weight: 500;}
 ul{
     display: flex;
     align-items: center;
@@ -40,9 +49,12 @@ li{
     margin: 0px 20px;
 }
 a{
+    transition: .3s ease-in !important;
     position: relative;
 }
-
+a:hover{
+    color: var(--green) !important;
+}
 
 /* Styles start here */
 
@@ -102,6 +114,8 @@ a{
 .header__nav{
     padding: 7px 0px;
     border: 1px solid #D1D1D1;
+    border-right: none;
+    border-left: none;
     display: flex;
     align-items: center;
 }
@@ -160,4 +174,36 @@ a{
 }
 .about ul li:nth-child(2n+1){
     width: 50%;
+}
+
+.discount{
+    background: var(--grey);
+    padding: 50px 0px;
+}
+.discount h2 span{
+    font-size: inherit;
+    color: var(--green) !important;
+    line-height: 70px;
+}
+.discount__box{
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin: 40px 25px 0px 0px;
+}
+.discount__box h2{
+    background: linear-gradient(83.37deg, #4FB84E 10.41%, #2A8640 89.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.line{
+    background: #2A8640;
+    width: 20%;
+    height: 2px;
 }
