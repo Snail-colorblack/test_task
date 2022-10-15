@@ -46,8 +46,6 @@ ul{
     padding: 5px 0px;
 }
 li{
-    display: flex;
-    align-items: center;
     margin: 0px 20px;
 }
 a{
@@ -273,6 +271,8 @@ a:hover{
     margin-right: 10px;
 }
 .footer__header ul li{
+    display: flex;
+    align-items: center;
     margin: 0;
     margin-right: 30px;
 }
